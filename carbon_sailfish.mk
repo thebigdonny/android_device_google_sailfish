@@ -17,6 +17,11 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
+# Kernel
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/google/marlin
+TARGET_KERNEL_CONFIG := marlin_defconfig
+
 # Screen Resolution for the Bootanimation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
@@ -38,5 +43,6 @@ PRODUCT_MANUFACTURER := Google
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=sailfish \
     BUILD_FINGERPRINT=google/sailfish/sailfish:7.1.1/NMF26Q/3537182:user/release-keys \
     PRIVATE_BUILD_DESC="sailfish-user 7.1.1 NMF26Q 3537182 release-keys"
