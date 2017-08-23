@@ -1,6 +1,6 @@
 [
   {
-    "repository": "CarbonROM/android_device_google_marlin",
+    "repository": "thebigdonny/android_device_google_marlin",
     "target_path": "device/google/marlin"
   }
 ]
